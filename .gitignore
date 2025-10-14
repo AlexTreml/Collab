@@ -1,0 +1,24 @@
+# Unreal Engine Git Ignore
+
+# Compiled source files, binaries, and build artifacts
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+.vscode/
+.idea/
+.vs/
+*.VC.db
+*.sln
+*.suo
+*.xcodeproj
+*.opensdf
+*.sdf
+
+# Backup and autosave files
+*_Backup/
+*_Autosaves/
+
+# Ignore local config files
+Config/DefaultEditorPerProjectUserSettings.ini
+Config/DefaultEditor.ini
