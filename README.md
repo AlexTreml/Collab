@@ -2,11 +2,11 @@ This project is stored on GitHub so we can both work on the same Unreal Engine f
 
 You’ll need to use GitHub Desktop to upload (push) and download (pull) changes.
 
+_Check which Unreal Version using***
+
 # What You Need
 
 Before starting:
-
-Install Unreal Engine 5.x (same version as this project).
 
 Install GitHub Desktop: https://desktop.github.com/
 
