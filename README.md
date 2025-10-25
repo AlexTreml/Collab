@@ -157,16 +157,7 @@ Before you open Unreal again, Pull origin to get their latest work.
 
 Unreal will rebuild temporary data if needed (it’s normal).
 
-##Folder Ownership (so we don’t clash)
 
-We’ll split the project folders like this:
-
-Content/
- ┣ Levels/                 ← Designer’s maps (owned by designer)
- ┣ Mechanics/              ← Developer’s blueprints (owned by me)
- ┣ Props/                  ← Shared assets
- ┗ Sublevels/
-     ┗ Mechanics_Test.umap ← Developer’s test level for gameplay testing
 
 
 ##Rule	Why
