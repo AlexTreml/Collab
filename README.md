@@ -1,97 +1,179 @@
-This project is stored on GitHub so we can both work on the same Unreal Engine files.
+## Uploading an Unreal Project to GitHub 
 
-You’ll need to use GitHub Desktop to upload (push) and download (pull) changes.
+These are step-by-step instructions for someone new to GitHub.
+You don’t need to know coding — just follow the steps carefully once.
 
-_Check which Unreal Version using***
-
-# What You Need
+##What You’ll Need
 
 Before starting:
 
-Install GitHub Desktop: https://desktop.github.com/
+Install GitHub Desktop → https://desktop.github.com/
 
-Create a GitHub account (free).
+Create a GitHub account (if you don’t have one already)
 
-I will invite you to the project as a collaborator — accept the invite via email.
+Make sure you’ve been invited as a collaborator to the project (you’ll get an email from GitHub)
 
- # Downloading the Project (Cloning)
+Click the link in the email → click “Accept invitation”
 
-Open GitHub Desktop.
+Then you’ll see the repository page open on GitHub.
 
-Click File → Clone Repository.
+## Step 1: Open GitHub Desktop
+
+Open GitHub Desktop (blue cat icon).
+
+If prompted, sign in with your GitHub account.
+
+## Step 2: Clone the Empty Repository
+
+In GitHub Desktop, go to the top menu:
+→ File → Clone Repository
 
 Select the URL tab.
 
-Paste this link:
+Paste the repository link (I’ll give you this link).
+Example:
 
 https://github.com/yourusername/yourprojectname.git
 
-Choose a local folder (e.g. Documents/UnrealProjects).
+
+Choose where to save it (e.g. Documents/UnrealProjects/ProjectName).
 
 Click Clone.
 
-Once it finishes, open that folder and double-click the .uproject file.
+ #You now have a local copy of the GitHub repo (it’s empty right now).
 
-Unreal may ask to rebuild missing files — click Yes.
+## Step 3: Add Your Unreal Project
 
-# Making Changes
+Open the folder you just cloned.
+(GitHub Desktop will show a button like “Show in Explorer” — click it.)
 
-Open the project in Unreal.
+Copy your entire Unreal project folder into that cloned folder.
+Example folder structure:
 
-Make your updates (e.g. blueprints, maps, lighting).
+Documents/
+  UnrealProjects/
+    MyUnrealRepo/         ← This is the cloned GitHub folder
+      Content/
+      Config/
+      Source/
+      MyUnrealProject.uproject
 
-Press Ctrl+S often to save.
+## Step 4: Upload the Files (Commit + Push)
 
-When you’re finished working:
+Go back to GitHub Desktop — it will automatically detect all the new files.
 
-Close Unreal before pushing (so it doesn’t lock files).
+At the bottom left, where it says “Summary (required)”, type:
 
- # Uploading Your Work (Push Changes)
+Initial Unreal project upload
+
+
+Click the blue button “Commit to main”.
+
+Then at the top, click “Push origin” (arrow pointing up).
+
+# This uploads the entire Unreal project to GitHub.
+You’ll see all the files appear on the GitHub website after refreshing the page.
+
+##Step 5: Check It Worked
+
+Go back to the repository page on GitHub in your browser.
+
+Refresh the page — you should now see folders like:
+
+Config/
+Content/
+Source/
+
+
+That means the upload was successful 
+
+##Notes for Unreal Projects
+
+If you see big folders like Saved/, Intermediate/, or Binaries/, don’t worry — these are automatically ignored by the .gitignore file.
+
+In the future, only commit and push after saving your work in Unreal.
+
+Always pull before starting work, and push after finishing.
+
+ ##Common Mistakes to Avoid
+Mistake	What Happens
+Uploading a ZIP file	GitHub won’t track updates properly
+Forgetting to push	Your changes stay only on your computer
+Editing before pulling	Can cause merge conflicts
+Deleting .gitignore	Project becomes huge and messy
+### Summary
+Step	What to Do	Tool
+1	Install GitHub Desktop	GitHub website
+2	Accept invite to repo	Email → GitHub
+3	Clone repo	GitHub Desktop
+4	Copy Unreal project into cloned folder	File Explorer
+5	Commit & Push	GitHub Desktop
+
+
+
+
+###Step-by-Step Workflow (Every Time You Work - ongoing if we ar weoking on more than one update)
+## Before you start work
 
 Open GitHub Desktop.
 
-It will automatically show your recent changes on the left side.
+Click Fetch origin (top bar).
 
-At the bottom left, type a short summary message — for example:
+If it says updates are available, click Pull origin.
+# This downloads the latest version of the project.
 
-Updated environment lighting and added new props.
+Then open the Unreal project (.uproject file) and start working.
+
+##While you’re working
+
+Save your files regularly in Unreal (Ctrl + S).
+
+Don’t worry about GitHub until you’re finished for the day/session.
+
+Avoid editing the same map or Blueprint at the same time as the other person.
+
+## When you’re finished
+
+Close Unreal (so no files are locked).
+
+Open GitHub Desktop.
+
+You’ll see all your changed files listed.
+
+In the summary box, type a short message describing what you did.
+Example:
+
+Updated environment lighting and added new meshes
+
 
 Click Commit to main (blue button).
 
-Then click Push origin (top bar) to upload your changes to GitHub.
+Then click Push origin (top bar).
+#Your updates are now uploaded for both of us.
 
- # Getting the Latest Version (Pull Changes)
+# When the other person finishes
 
-Before starting new work each day:
+Before you open Unreal again, Pull origin to get their latest work.
 
-Open GitHub Desktop.
+Unreal will rebuild temporary data if needed (it’s normal).
 
-Click Fetch origin → if new updates exist, click Pull origin.
+##Folder Ownership (so we don’t clash)
 
-This downloads the latest version from GitHub.
+We’ll split the project folders like this:
 
-Once the pull completes, open Unreal normally.
+Content/
+ ┣ Levels/                 ← Designer’s maps (owned by designer)
+ ┣ Mechanics/              ← Developer’s blueprints (owned by me)
+ ┣ Props/                  ← Shared assets
+ ┗ Sublevels/
+     ┗ Mechanics_Test.umap ← Developer’s test level for gameplay testing
 
- # Resolving Simple Conflicts
 
-If you both edit the same file (e.g. the same map) at once, Unreal may warn about conflicts.
+##Rule	Why
+Pull before you start	Ensures you’re up to date
+Push when you finish	Shares your work
+Don’t edit the same map simultaneously	Prevents overwrites
+Close Unreal before pushing	Avoids locked files
+Communicate if editing the same Blueprint	Prevents lost changes
 
-Always Pull before starting work.
 
-If Unreal says a file is newer, keep the newest version unless you know your edits are missing.
-
-If unsure, tell the other collaborator before overwriting.
-
- # What NOT to Upload
-
-These folders are automatically ignored (so don’t worry about them):
-
-Saved/
-
-Intermediate/
-
-DerivedDataCache/
-
-Binaries/
-
-These are temporary and will be rebuilt automatically by Unreal.
