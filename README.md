@@ -1,17 +1,11 @@
 ## Uploading an Unreal Project to GitHub 
 
-These are step-by-step instructions for someone new to GitHub.
-You don’t need to know coding — just follow the steps carefully once.
 
 ##What You’ll Need
 
 Before starting:
 
 Install GitHub Desktop → https://desktop.github.com/
-
-Create a GitHub account (if you don’t have one already)
-
-Make sure you’ve been invited as a collaborator to the project (you’ll get an email from GitHub)
 
 Click the link in the email → click “Accept invitation”
 
