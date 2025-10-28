@@ -24,11 +24,9 @@ In GitHub Desktop, go to the top menu:
 
 Select the URL tab.
 
-Paste the repository link (I’ll give you this link).
-Example:
+Paste the repository link 
 
-https://github.com/yourusername/yourprojectname.git
-
+https://github.com/AlexTreml/Collab.git
 
 Choose where to save it (e.g. Documents/UnrealProjects/ProjectName).
 
