@@ -7,7 +7,7 @@ Before starting:
 
 Install GitHub Desktop → https://desktop.github.com/
 
-Click the link in the email → click “Accept invitation”
+Click the link in the email → click “Accept invitation” for GIThuB
 
 Then you’ll see the repository page open on GitHub.
 
